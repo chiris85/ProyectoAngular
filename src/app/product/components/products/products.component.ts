@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { Product } from '../product.model';
+import { Product } from './../../../core/models/product.model';
 
 @Component({
   selector: 'app-products',
@@ -8,8 +8,6 @@ import { Product } from '../product.model';
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-
-  constructor() { }
 
   products: Product[] = [
     {
@@ -56,7 +54,9 @@ export class ProductsComponent implements OnInit {
     },
   ];
 
-  ngOnInit(): void {
+  constructor() { }
+
+  ngOnInit() {
   }
 
   clickProduct(id: number) {

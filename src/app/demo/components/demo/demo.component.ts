@@ -1,4 +1,4 @@
-import { NgModule, Component, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-demo',
@@ -7,12 +7,17 @@ import { NgModule, Component, OnInit } from '@angular/core';
 })
 export class DemoComponent implements OnInit {
 
-  constructor() { }
-
   title = 'platzi-store';
+
   items = ['nicolas', 'julian', 'perez'];
 
+  objeto = {};
+
   power = 10;
+
+  ngOnInit() {
+    // code
+  }
 
   addItem() {
     this.items.push('nuevo item');
@@ -22,7 +27,6 @@ export class DemoComponent implements OnInit {
     this.items.splice(index, 1);
   }
 
-  ngOnInit(): void {
-  }
+
 
 }
