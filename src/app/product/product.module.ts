@@ -19,7 +19,7 @@ import { MaterialModule } from './../material/material.module';
     CommonModule,
     SharedModule,
     ProductRoutingModule,
-    MaterialModule
+    MaterialModule,
   ]
 })
 export class ProductModule {
